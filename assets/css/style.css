@@ -1,0 +1,56 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* google fonts  */
+
+/* Root color and font family */
+:root {
+    --azeret-mono: "Azeret Mono", serif;
+    --dark-primary: #0D1321;
+    --dark-secondary: #0d1321b2;
+}
+
+/* Root color and font family */
+/* basic styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+span,
+table,
+footer,
+nav,
+div,
+section {
+    padding: 0;
+    margin: 0;
+}
+/* basic styles  */
+/* shared style  */
+
+/* shared style  */
