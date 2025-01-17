@@ -317,7 +317,6 @@ section {
 }
 
 .facts-box-content {
-    max-width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -386,7 +385,9 @@ section {
         gap: 15px;
 
     }
-
+    .some-facts{
+        padding: 0px 10px;
+    }
     .features-btn {
 
         margin-left: 10px;
