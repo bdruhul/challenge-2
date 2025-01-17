@@ -375,11 +375,13 @@ section {
         margin: 0 auto;
     }
 
-    .quick-img-box,
-    .facts-box {
+    .quick-img-box{
         grid-template-columns: repeat(1, 1fr);
     }
+    .facts-box{
+        grid-template-columns: repeat(2, 1fr);
 
+    }
     .quick-list-content,
     .quick-img-box {
         gap: 15px;
