@@ -327,6 +327,7 @@ section {
     padding-bottom: 20px;
     border: 1px solid var(--btn-color);
     border-radius: 8px;
+    text-align: center;
 }
 
 .facts-box-content-description {
@@ -425,14 +426,22 @@ section {
         margin: 0 auto;
     }
 
-    .quick-img-box{
+    .quick-img-box, .sponsor-img-box{
         grid-template-columns: repeat(1, 1fr);
     }
-    .facts-box, .sponsor-img-box{
+    .facts-box{
         grid-template-columns: repeat(2, 1fr);
 
     }
+    .sponsor-img-box{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
+    }
     .quick-list-content,
     .quick-img-box {
         gap: 15px;
