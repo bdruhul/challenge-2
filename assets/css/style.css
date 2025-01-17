@@ -142,7 +142,8 @@ section {
     display: block;
 }
 
-.banner-description {
+.banner-description,
+.quick-content-description {
     font-family: var(--Work-Sans);
     font-size: 1rem;
     font-weight: 400;
@@ -157,10 +158,10 @@ section {
     font-family: var(--Work-Sans);
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
     color: var(--white-color);
     border: 1px solid var(--btn-color);
     transition: all linear 0.5s;
-
 }
 
 .primary-btn:hover {
@@ -180,7 +181,55 @@ section {
 
 /* banner styles  */
 /* main styles  */
+/* quick list stylese */
+.quick-list {
+    padding: 50px 0px;
+}
 
+.quick-list-content {
+
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.quick-img-box {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.quick-right,
+.quick-img-box {
+    width: 50%;
+}
+
+.quick-img-box img {
+    width: 100%;
+}
+
+.quick-content {
+    max-width: 530px;
+}
+
+.quick-content-title {
+    font-family: var(--Work-Sans);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-1);
+}
+
+.dark-3 {
+    font-weight: 500;
+    color: var(--dark-3);
+}
+
+.color-btn {
+    color: var(--btn-color);
+}
+
+/* quick list styles  */
 /* Responsive styles  */
 @media screen and (max-width:575.9px) {
     .container {
@@ -206,6 +255,27 @@ section {
         font-size: 2rem;
         line-height: 2.5rem;
     }
+
+    .quick-list {
+        padding: 15px 0px;
+    }
+
+    .quick-right,
+    .quick-img-box {
+        width: 95%;
+    }
+
+    .quick-img-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .quick-list-content,
+    .quick-img-box {
+        gap: 15px;
+
+    }
+
+
 }
 
 /* Responsive styles  */
