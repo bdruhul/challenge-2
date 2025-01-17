@@ -143,7 +143,9 @@ section {
 }
 
 .banner-description,
-.quick-content-description {
+.quick-content-description,
+.features-description,
+.features-box-description {
     font-family: var(--Work-Sans);
     font-size: 1rem;
     font-weight: 400;
@@ -230,6 +232,78 @@ section {
 }
 
 /* quick list styles  */
+/* features Styles  */
+.features {
+    padding: 50px 0px;
+}
+
+.features-main {
+    justify-content: space-between;
+    gap: 100px;
+
+}
+
+.features-right,
+.features-left {
+    width: 50%;
+}
+
+.features-right img {
+    width: 100%;
+}
+
+.features-title {
+    font-family: var(--Work-Sans);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-1);
+    padding-left: 20px;
+    position: relative;
+}
+
+.features-title::before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 80%;
+    background-color: var(--btn-color);
+    top: 10%;
+    left: 0;
+}
+
+.features-box-title {
+    font-family: var(--Work-Sans);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-1);
+}
+
+.features-box-description {
+    margin: 12px 0px;
+}
+
+.features-box{
+    margin-top: 25px;
+}
+
+.features-box {
+    padding: 30px;
+    background-color: var(--white-color);
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+
+}
+.features-btn{
+    font-size: 3rem;
+    margin-left: -70px;
+    margin-top: -70px;
+}
+.features-btn span{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+/* features Styles  */
 /* Responsive styles  */
 @media screen and (max-width:575.9px) {
     .container {
@@ -261,8 +335,10 @@ section {
     }
 
     .quick-right,
-    .quick-img-box {
+    .quick-img-box,.features-right,
+    .features-left  {
         width: 95%;
+        margin: 0 auto;
     }
 
     .quick-img-box {
@@ -272,6 +348,20 @@ section {
     .quick-list-content,
     .quick-img-box {
         gap: 15px;
+
+    }
+    .features-btn{
+
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .features-box {
+        padding: 10px;
+        width: 95%;
+        margin: 15px auto;
+    }
+    .features-main {
+        gap: 20px;
 
     }
 
