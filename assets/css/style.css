@@ -147,7 +147,8 @@ section {
 .features-description,
 .features-box-description,
 .some-description,
-.facts-box-content-description {
+.facts-box-content-description,
+.our-sponsor-description {
     font-family: var(--Work-Sans);
     font-size: 1rem;
     font-weight: 400;
@@ -219,7 +220,8 @@ section {
 
 .quick-content-title,
 .some-title,
-.facts-box-content-title {
+.facts-box-content-title,
+.our-sponsor-title {
     font-family: var(--Work-Sans);
     font-size: 3rem;
     font-weight: 700;
@@ -337,6 +339,42 @@ section {
     gap: 120px;
 }
 
+/* our sponsor styles */
+.our-sponsor{
+    padding: 100px 0px;
+}
+.our-sponsor-top{
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 10px;
+
+}
+.sponsor-img-box{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+    padding: 0px 10px;
+
+}
+.sponsor-img-box img{
+        filter: grayscale(100%);
+}
+/* footer style  */
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.footer-text{
+    font-family: var(--Work-Sans);
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--dark-2);
+}
 /* Responsive styles  */
 @media screen and (max-width:575.9px) {
     .container {
@@ -347,6 +385,16 @@ section {
     .d-flex {
         flex-direction: column;
     }
+    .banner-description,
+.quick-content-description,
+.features-description,
+.features-box-description,
+.some-description,
+.facts-box-content-description,
+.our-sponsor-description {
+
+    margin: 10px 0px;
+}
 
     .brand,
     .nav-link {
@@ -378,10 +426,11 @@ section {
     .quick-img-box{
         grid-template-columns: repeat(1, 1fr);
     }
-    .facts-box{
+    .facts-box, .sponsor-img-box{
         grid-template-columns: repeat(2, 1fr);
 
     }
+
     .quick-list-content,
     .quick-img-box {
         gap: 15px;
@@ -389,6 +438,7 @@ section {
     }
     .some-facts{
         padding: 0px 10px;
+        margin-bottom: 20px;
     }
     .features-btn {
 
@@ -412,7 +462,9 @@ section {
         padding: 25px;
         margin: 0 auto;
     }
-
+    .our-sponsor{
+        padding: 15px 0px;
+    }
 
 }
 
